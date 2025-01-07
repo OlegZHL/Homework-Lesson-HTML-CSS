@@ -1,0 +1,356 @@
+/* Сброс стилей */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+} 
+
+
+/* Общие стили */
+
+html, body {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s; 
+}
+
+button:hover {
+    transform: translateY(-5px);
+}
+
+.title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 43px;
+    color: #363940;
+    }
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #95a1bb;
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+        max-width: 1170px;
+        padding: 0 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/* Стили для Хедера */
+
+.header {
+    background-color: #0a61f7;
+    padding: 14px 0px;
+}
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-link {
+font-weight: 500;
+font-size: 12px;
+line-height: 20px;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+color: #fff;
+}
+
+
+.menu {
+    display: flex;
+    gap: 24px;
+}
+
+/* Стили для первой секции */
+
+.main-wrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    min-height: 800px;
+}
+
+.main-img {
+    align-self: flex-end;
+}
+
+.main-title {
+font-weight: 500;
+font-size: 58px;
+line-height: 68px;
+color: #363940;
+margin-bottom: 30px;
+}
+
+.main .text {
+    margin-bottom: 40px;
+    max-width:380px;
+}
+
+
+.button {
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: #fff;
+width: 152px;
+height: 50px;
+background-color:  #0a61f7;
+border-radius: 4px;
+}
+
+
+/* Стили для 2ой секции */
+
+.rates-section {
+    padding: 100px 0px;
+    background-color: #f9fafc;
+}
+
+.rates-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rates-section .title {
+    margin-bottom: 20px;
+}
+
+.rates-section .text {
+    margin-bottom: 40px;
+}
+
+.table {
+    border-collapse: collapse; /* убираем отступы между границами таблицы */
+} 
+
+th,td {
+    border: 1px solid #95a1bb;
+    width: 240px;
+    padding: 15px;
+    text-align: center;
+}
+
+.table-title {
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+color: #363940;
+}
+
+
+.table-subtitle {
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+color: #363940;
+text-align: left;
+padding-left: 20px;
+}
+
+.table-link {
+    color: #0a61f7;
+}
+
+
+.table-button {
+border-radius: 4px;
+width: 140px;
+border: 1px solid #0a61f7;
+color: #0a61f7;
+font-weight: 500;
+font-size: 12px;
+line-height: 20px;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+padding: 8px 0;
+}
+
+.table-button.active {
+    background-color: #0a61f7;
+    color: #fff;
+}
+
+.table-footer td {
+    padding: 30px 0px;
+}
+
+/* Стили для 3ей секции */
+
+.create-account-section {
+    padding: 100px 0px;
+}
+
+.account-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-account-section .title {
+    margin-bottom: 50px;
+}
+
+.create-account-section .text {
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+.list-item {
+    list-style-image: url("/assets/images/Check.png");
+    margin-left: 30px;
+    margin-bottom: 15px;
+    color: #363940;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input, select, fieldset, textarea {
+    border-radius: 4px;
+    border: 1px solid #95a1bb;
+    padding: 14px 15px;
+}
+
+
+input, select, fieldset, textarea, label, legend, input::placeholder,
+select::placeholder, textarea::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+    color: #95a1bb;
+    font-family: inherit;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+input[type="email"], input[type="password"], input[type="date"], select {
+    width: 230px;
+    height: 50px;
+    flex-grow: 1;
+}
+
+input[type="radio"], input[type="checkbox"], input[type="date"], select {
+    cursor: pointer;
+}
+
+.stack, fieldset {
+    display: flex;
+    column-gap: 30px;
+}
+
+.fields-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+fieldset{
+    width: 100%;
+    padding: 30px 15px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 80px;
+    resize: none;
+}
+
+form .button {
+    width: 100%;
+} 
+
+select {
+    background: url(assets/images/Arrow-down.svg) no-repeat right 15px top 50%;
+    appearance: none;
+}
+
+input[type="data"]::-webkit-calendar-picker-indicator {
+    background: url(assets/images/Calendar.svg) no-repeat;
+}
+
+
+/* Стили для футера */
+
+.footer {
+background-color: #0a61f7;
+text-align: center;
+padding: 20px 0;
+}
+
+small {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color:#fff;
+}
+
+
+/*============== Адаптив под планшеты ==============*/
+
+@media screen and (max-width: 1400px) {
+    .main-wrapper{
+        flex-direction: column;
+    }
+    .main-info{
+        align-self: flex-start;
+        margin: 100px 0 80px;
+    }
+    .main-img{
+        align-self: center;
+    }
+    .table{
+        width: 940px;
+    }
+    .table-wrapper{
+        overflow-x: auto;
+        width: 100%;
+        max-width: 940px;
+    }
+    .account-wrapper{
+        flex-direction: column;
+        gap: 70px;
+    }
+    .create-account-section .text {
+        max-width: unset; /* Отменяем максимальную ширину */
+    }
+    form{
+        align-self: center;
+    }
+}
